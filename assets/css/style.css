@@ -47,14 +47,14 @@ nav {
   padding: 0px;
 }
 
-ul {
+nav ul {
   list-style: none;
   float: right;
   margin: 0px;
   padding: 0px;
 }
 
-li {
+nav li {
   display: inline-block;
   padding: 0px;
   margin: 0px;
@@ -62,8 +62,8 @@ li {
 }
 
 .nav_button {
-  margin: 15px 1px 0px 1px;
-  height: 30px;
+  margin: 10px 2px;
+  height: 40px;
   padding: 5px;
   float: right;
   border: 2px solid rgba(87, 92, 249, 1);
@@ -72,14 +72,19 @@ li {
 }
 
 a {
+  color: black;
   text-decoration: none;
-  color: rgba(87, 92, 249, 1);
+}
+
+a:visited{
+  color: black;
+  text-decoration: none;
 }
 
 #signup_button {
-  margin: 15px 0px;
-  height: 30px;
-  width: 50px;
+  margin: 10px 0px;
+  height: 40px;
+  width: 60px;
   float: left;
   background-color: #00ff42;
   border: 2px solid #00a32a;
@@ -177,22 +182,23 @@ h4 {
 }
 
 .first_line , .second_line {
-  padding: 5px;
+  margin: 5px;
 }
 
 .product_title {
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: normal;
   text-align: right;
   float: right;
-  margin: 0px;
+  max-width: 70%
 }
 
 .price {
-  float:left;
-  font-size: 10pt;
+  font-size: 8pt;
   font-weight: normal;
+  float: left;
   margin: 0px;
+  max-width: 30%
 }
 
 .product_description {
@@ -207,7 +213,7 @@ h4 {
 .discount {
   float: left;
   text-align: left;
-  font-size: 10pt;
+  font-size: 7pt;
   font-weight: normal;
   text-decoration: line-through;
   margin: 0px;
@@ -245,6 +251,104 @@ h4 {
   display:none;
 }
 
+.most_sale .post{
+  margin: 0;
+  width: 100%;
+}
+
+.why_us {
+  margin: 10px 0 0 0;
+  padding: 20px 0;
+  background: rgb(68,68,68);
+  background: linear-gradient(0deg, rgba(80,80,80,1) 0%, rgba(246,246,246,0) 45%, rgba(246,246,246,0) 98%, rgba(43,141,251,1) 99%, rgba(255,255,255,0) 100%);
+}
+
+.why_us_card {
+  width: 100%;
+  text-align: center;
+  float: right;
+  display: inline-block;
+}
+
+.why_us_card img {
+  width: 60%;
+  height: auto;
+}
+
+.why_us_card h4 {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.why_us_card .discription {
+  width: 80%;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.footer {
+  color: #FFF;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(80,80,80,1);
+  padding: 15px 0;
+}
+
+.footer_side_card {
+  width: 30%;
+  float: right;
+}
+
+.footer_mid_card {
+  width: 20%;
+  float: right;
+}
+
+.footer h4 {
+  font-size: 16pt;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.footer .discription {
+  width: 80%;
+}
+.footer_mid_card ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.footer_mid_card li {
+  margin: 2px 0;
+  padding: 0px;
+  width: 80%;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:visited{
+  color: white;
+  text-decoration: none;
+}
+.namad {
+  width: 150px;
+  height: auto;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 2px 5px;
+}
+
+@media screen and (min-width: 400px) {
+  .most_sale .post{
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .container {
     padding: 0px 40px;
@@ -264,6 +368,15 @@ h4 {
     max-height: 400px;
   }
     
+  .most_sale .post{
+    width: calc(100% /3);
+  }
+  .alter {
+    display: none;
+  }
+  .why_us_card {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -325,6 +438,18 @@ h4 {
 
   .quart2 {
     display:inline-block;
+  }
+
+  .most_sale .post{
+    width: 25%;
+  }
+
+  .alter {
+    display: inline-block;
+  }
+
+  .why_us_card {
+    width: 25%;
   }
 }
 

@@ -372,6 +372,10 @@ h4 {
   folat: left;
 }
 
+.pics{
+  text-align: center;
+}
+
 @media screen and (min-width: 400px) {
   .most_sale .post{
     width: 50%;

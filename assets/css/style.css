@@ -443,17 +443,17 @@ h4 {
   .why_us_card {
     width: 50%;
   }
-  .footer_side_card {
-    width: 30%;
-  }
-  .footer_mid_card {
-    width: 20%;
-  }
 }
 
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 38pt;
+  }
+  .footer_side_card {
+    width: 30%;
+  }
+  .footer_mid_card {
+    width: 20%;
   }
 }
 

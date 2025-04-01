@@ -1,19 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@font-face {
-  font-family: 'Negar';
-  font-weight: normal;
-  src: url("../Fonts/ANegaar.ttf")
-}
 
-@font-face {
-  font-family: 'Negar';
-  font-weight: bold;
-  src: url('../Fonts/ANegaarBold.ttf');
+@font-face { 
+  font-family: "Anjomanweb";
+  src: url("../fonts/AnjomanwebGX.woff");
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Negar';
+  font-family: 'Anjomanweb';
   margin: 0;
 }
 
@@ -298,7 +292,7 @@ h4 {
 .footer {
   color: #FFF;
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: rgba(80,80,80,1);
   padding: 15px 0;
 }
@@ -355,10 +349,12 @@ h4 {
 }
 
 .copyright {
+  margin: 5px 0px 0px 0px;
   float: right;
 }
 
-.design{
+.design {
+  margin: 5px 0px 0px 0px;
   text-align: left;
   folat: left;
 }

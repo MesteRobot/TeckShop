@@ -409,6 +409,84 @@ h4 {
   text-align: center;
 }
 
+
+
+
+
+.breadcumber {
+  width: 100%;
+  height: 40px;
+  background-color: #eee;
+  padding: 8px 0;
+}
+
+.breadcumber ul {
+  padding: 0;
+}
+.breadcumber li {
+  margin: 0;
+  list-style: none;
+  float: right;
+}
+
+.breadcumber a {
+  color: #444;
+}
+
+.breadcumber span {
+  color: #444;
+}
+
+.breadcumber a::after {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url('../images/icons/chevron-left.svg') center no-repeat;
+  padding: 0 5px;
+  vertical-align: -3px;
+}
+
+.single_product {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.single_product_right {
+  float: right;
+  width: 100%;
+  border: 1px solid #eee;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.single_product_left {
+  padding: 0 15px;
+  float: right;
+  width: 100%;
+}
+
+.single_product_right img {
+  width: auto;
+  height: 250px;
+}
+
+.single_product_left h1 {
+  font-size: 14pt;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.single_product_price p {
+  font-size: 10pt;
+  color: #222;
+}
+
+.single_product_rate {
+  margin: 10px 0;
+}
+
 @media screen and (min-width: 400px) {
   .most_sale .post{
     width: 50%;
@@ -455,6 +533,14 @@ h4 {
   .footer_mid_card {
     width: 20%;
   }
+
+  .single_product_right {
+    width: 45%;
+  }
+
+  .single_product_left {
+    width: 55%;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -471,11 +557,17 @@ h4 {
   .quart1 {
     display:inline-block;
   }
+  .single_product_right img {
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 900px) {
   .ads_cards img {
     height:225px;
+  }
+  .single_product_right img {
+    height: 330px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -529,7 +621,12 @@ h4 {
   .footer_mid_card {
     width: 20%;
   }
+  .single_product_right img {
+    height: 350px;
+  }
 }
+
+
 
 @media screen and (min-width: 1150px) {
   .container {
